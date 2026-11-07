@@ -1,4 +1,4 @@
 :HL["/vfx-js-transitions/_next/static/chunks/41-sagdhez3d7.css","style"]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"/_not-found","h":96,"c":"$Q2"}]]
-0:{"b":"ucjPaAp3mTDbNWWP6Y5oy","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"4__tpEOJsxx_eapb_wnkM","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
