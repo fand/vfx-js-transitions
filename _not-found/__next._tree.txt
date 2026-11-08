@@ -1,4 +1,4 @@
 :HL["/vfx-js-transitions/_next/static/chunks/0yah0i-tyv9gn.css","style"]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"/_not-found","h":96,"c":"$Q2"}]]
-0:{"b":"chbI0RZhwuCKubFTlpC47","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"xCcige1P4W-4kGx0Uza2Q","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
