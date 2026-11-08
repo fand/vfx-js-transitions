@@ -156,7 +156,34 @@ useTransitionIn({ transition: Glitch });
   transitionIn({ transition: Glitch });
 </script>
 
-<h1>About</h1>`}],notes:["The target fills the viewport height and pages scroll inside it. Pass fullscreen={false} to size it with your own CSS, e.g. under a header.","A link's transition(spec) wins over the page's transitionIn. Back plays the winning spec reversed.","Needs Svelte 5.29 or later for {@attach}. Navigate from code with setNextTransition({ transition }) before goto()."]},{id:"vanilla",name:"Vanilla",install:"npm i @vfx-js/core @vfx-js/transitions",intro:"show(slide) switches between slides already in the DOM. For content built on the fly, run(cb) works like document.startViewTransition(cb): change the DOM in cb, and the shader does the rest.",snippets:[{label:"index.html",code:`
+<h1>About</h1>`}],notes:["The target fills the viewport height and pages scroll inside it. Pass fullscreen={false} to size it with your own CSS, e.g. under a header.","A link's transition(spec) wins over the page's transitionIn. Back plays the winning spec reversed.","Needs Svelte 5.29 or later for {@attach}. Navigate from code with setNextTransition({ transition }) before goto()."]},{id:"astro",name:"Astro",install:"npm i @vfx-js/core @vfx-js/astro @vfx-js/transitions",intro:"Put <VFXTransition> from @vfx-js/astro around the layout's <slot />. It hooks into <ClientRouter> and holds each navigation until the old page is captured. Each page picks its transition with <TransitionIn>.",snippets:[{label:"src/layouts/Layout.astro",code:`
+---
+import { ClientRouter } from "astro:transitions";
+import { VFXTransition } from "@vfx-js/astro";
+---
+
+<!-- The shader is the animation, so turn off the view transition. -->
+<html lang="en" transition:animate="none">
+  <head><ClientRouter /></head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/gallery" data-vfx-transition="swipe">Gallery</a>
+    </nav>
+    <VFXTransition transition="crossfade" duration={0.8}>
+      <slot />
+    </VFXTransition>
+  </body>
+</html>`},{label:"src/pages/about.astro",code:`
+---
+import { TransitionIn } from "@vfx-js/astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <TransitionIn transition="glitch" />
+  <h1>About</h1>
+</Layout>`}],notes:["The target fills the viewport height and pages scroll inside it. Pass fullscreen={false} to size it with your own CSS, e.g. under a header.","Transitions are names: the class names from @vfx-js/transitions in lowercase. Register your own with registerVFX from @vfx-js/astro/client.","A link's data-vfx-transition wins over the page's <TransitionIn>. Back plays the winning spec reversed."]},{id:"vanilla",name:"Vanilla",install:"npm i @vfx-js/core @vfx-js/transitions",intro:"show(slide) switches between slides already in the DOM. For content built on the fly, run(cb) works like document.startViewTransition(cb): change the DOM in cb, and the shader does the rest.",snippets:[{label:"index.html",code:`
 <nav>
   <button data-panel="#home">Home</button>
   <button data-panel="#about">About</button>
