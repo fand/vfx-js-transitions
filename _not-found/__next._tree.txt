@@ -1,4 +1,4 @@
-:HL["/vfx-js-transitions/_next/static/chunks/0yah0i-tyv9gn.css","style"]
+:HL["/vfx-js-transitions/_next/static/chunks/3h6r9br_2i3_4.css","style"]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"/_not-found","h":96,"c":"$Q2"}]]
-0:{"b":"gpfl0cYiiqwgCNWKkm76E","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"jFZggsXyBVUv6UvreNUR2","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
