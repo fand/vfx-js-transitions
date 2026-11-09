@@ -109,7 +109,7 @@ useTransitionIn({ transition: Glitch });
 
 <template>
   <h1>About</h1>
-</template>`}],notes:['The target fills the viewport height and pages scroll inside it. Pass :fullscreen="false" to size it with your own CSS, e.g. under a header.',"A link's v-transition spec wins over the page's useTransitionIn. Back plays the winning spec reversed.","Navigate from code with setNextTransition({ transition }) before navigateTo()."]},{id:"vue",name:"Vue",install:"npm i @vfx-js/core @vfx-js/vue @vfx-js/transitions",intro:"Put <VFXTransition> from @vfx-js/vue/router around <RouterView />. It reads the router from app.use(router) and holds each navigation until the old page is captured. Each page picks its transition with useTransitionIn.",snippets:[{label:"App.vue",code:`
+</template>`}],notes:['The target fills the viewport height and pages scroll inside it. Pass :fullscreen="false" to size it with your own CSS, e.g. under a header.',"A link's v-transition spec wins over the page's useTransitionIn.","Navigate from code with setNextTransition({ transition }) before navigateTo()."]},{id:"vue",name:"Vue",install:"npm i @vfx-js/core @vfx-js/vue @vfx-js/transitions",intro:"Put <VFXTransition> from @vfx-js/vue/router around <RouterView />. It reads the router from app.use(router) and holds each navigation until the old page is captured. Each page picks its transition with useTransitionIn.",snippets:[{label:"App.vue",code:`
 <script setup lang="ts">
 import { Crossfade, Swipe } from "@vfx-js/transitions";
 import { vTransition } from "@vfx-js/vue";
@@ -136,7 +136,7 @@ useTransitionIn({ transition: Glitch });
 
 <template>
   <h1>About</h1>
-</template>`}],notes:['The target fills the viewport height and pages scroll inside it. Pass :fullscreen="false" to size it with your own CSS, e.g. under a header.',"A link's v-transition spec wins over the page's useTransitionIn. Back plays the winning spec reversed.","A page with an async setup under your own <Suspense> may be captured before it resolves. Use waitFor on <VFXTransition> to wait for it.","Navigate from code with setNextTransition({ transition }) before router.push()."]},{id:"sveltekit",name:"SvelteKit",install:"npm i @vfx-js/core @vfx-js/svelte @vfx-js/transitions",intro:"Put <VFXTransition> from @vfx-js/svelte/sveltekit around the layout's children. It uses onNavigate, so SvelteKit waits for the old page to be captured. Each page picks its transition with transitionIn.",snippets:[{label:"src/routes/+layout.svelte",code:`
+</template>`}],notes:['The target fills the viewport height and pages scroll inside it. Pass :fullscreen="false" to size it with your own CSS, e.g. under a header.',"A link's v-transition spec wins over the page's useTransitionIn.","A page with an async setup under your own <Suspense> may be captured before it resolves. Use waitFor on <VFXTransition> to wait for it.","Navigate from code with setNextTransition({ transition }) before router.push()."]},{id:"sveltekit",name:"SvelteKit",install:"npm i @vfx-js/core @vfx-js/svelte @vfx-js/transitions",intro:"Put <VFXTransition> from @vfx-js/svelte/sveltekit around the layout's children. It uses onNavigate, so SvelteKit waits for the old page to be captured. Each page picks its transition with transitionIn.",snippets:[{label:"src/routes/+layout.svelte",code:`
 <script lang="ts">
   import { transition } from "@vfx-js/svelte";
   import { VFXTransition } from "@vfx-js/svelte/sveltekit";
@@ -159,7 +159,7 @@ useTransitionIn({ transition: Glitch });
   transitionIn({ transition: Glitch });
 </script>
 
-<h1>About</h1>`}],notes:["The target fills the viewport height and pages scroll inside it. Pass fullscreen={false} to size it with your own CSS, e.g. under a header.","A link's transition(spec) wins over the page's transitionIn. Back plays the winning spec reversed.","Needs Svelte 5.29 or later for {@attach}. Navigate from code with setNextTransition({ transition }) before goto()."]},{id:"astro",name:"Astro",install:"npm i @vfx-js/core @vfx-js/astro @vfx-js/transitions",intro:"Put <VFXTransition> from @vfx-js/astro around the layout's <slot />. It hooks into <ClientRouter> and holds each navigation until the old page is captured. Each page picks its transition with <TransitionIn>.",snippets:[{label:"src/layouts/Layout.astro",code:`
+<h1>About</h1>`}],notes:["The target fills the viewport height and pages scroll inside it. Pass fullscreen={false} to size it with your own CSS, e.g. under a header.","A link's transition(spec) wins over the page's transitionIn.","Needs Svelte 5.29 or later for {@attach}. Navigate from code with setNextTransition({ transition }) before goto()."]},{id:"astro",name:"Astro",install:"npm i @vfx-js/core @vfx-js/astro @vfx-js/transitions",intro:"Put <VFXTransition> from @vfx-js/astro around the layout's <slot />. It hooks into <ClientRouter> and holds each navigation until the old page is captured. Each page picks its transition with <TransitionIn>.",snippets:[{label:"src/layouts/Layout.astro",code:`
 ---
 import { ClientRouter } from "astro:transitions";
 import { VFXTransition } from "@vfx-js/astro";
@@ -186,7 +186,7 @@ import Layout from "../layouts/Layout.astro";
 <Layout>
   <TransitionIn transition="glitch" />
   <h1>About</h1>
-</Layout>`}],notes:["The target fills the viewport height and pages scroll inside it. Pass fullscreen={false} to size it with your own CSS, e.g. under a header.","Transitions are names: the class names from @vfx-js/transitions in lowercase. Register your own with registerVFX from @vfx-js/astro/client.","A link's data-vfx-transition wins over the page's <TransitionIn>. Back plays the winning spec reversed."]},{id:"vanilla",name:"Vanilla",install:"npm i @vfx-js/core @vfx-js/transitions",intro:"show(slide) switches between slides already in the DOM. For content built on the fly, run(cb) works like document.startViewTransition(cb): change the DOM in cb, and VFX-JS animates from the old content to the new.",snippets:[{label:"index.html",code:`
+</Layout>`}],notes:["The target fills the viewport height and pages scroll inside it. Pass fullscreen={false} to size it with your own CSS, e.g. under a header.","Transitions are names: the class names from @vfx-js/transitions in lowercase. Register your own with registerVFX from @vfx-js/astro/client.","A link's data-vfx-transition wins over the page's <TransitionIn>."]},{id:"vanilla",name:"Vanilla",install:"npm i @vfx-js/core @vfx-js/transitions",intro:"show(slide) switches between slides already in the DOM. For content built on the fly, run(cb) works like document.startViewTransition(cb): change the DOM in cb, and VFX-JS animates from the old content to the new.",snippets:[{label:"index.html",code:`
 <nav>
   <button data-panel="#home">Home</button>
   <button data-panel="#about">About</button>
