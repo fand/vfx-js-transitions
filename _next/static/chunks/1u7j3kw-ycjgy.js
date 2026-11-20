@@ -1,8 +1,8 @@
-(()=>{"use strict";(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,52894,e=>{var t=e.i(16597);let r=RegExp([/(\/\/[^\n]*|<!--[\s\S]*?-->|^[ \t]*#[^\n]*)/.source,/("(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*'|`(?:[^`\\]|\\.)*`)/.source,"\\b(import|from|export|const|let|return|await|async|new|function|type|if|else|for|of|in|out|uniform|precision|void|int|bool|float|vec2|vec3|vec4|mat2|mat3|mat4|sampler2D|discard|true|false)\\b|\\b(mix|smoothstep|step|fract|clamp|texture|length|dot|sin|cos|floor|abs|min|max|pow|normalize)(?=\\s*\\()",/\b(\d+(?:\.\d+)?)\b/.source,/(<\/?[A-Za-z][\w.-]*|\/?>)/.source].join("|"),"gm"),o=["tk-c","tk-s","tk-k","tk-f","tk-n","tk-t"];e.s(["f",0,function(e){let s=[],a=0;for(let i of e.matchAll(r)){let r=i.index??0;r>a&&s.push(e.slice(a,r));let n=i.findIndex((e,t)=>t>0&&void 0!==e);s.push((0,t.createElement)("span",{key:r,className:o[n-1]},i[0])),a=r+i[0].length}return s.push(e.slice(a)),s}])},78822,e=>{e.i(52729);var t=e.i(58786),r=e.i(92408);e.s(["PageTransition",0,function({preset:e}){return(0,t.f)({transition:r.Y[e]}),null}])},92408,e=>{var t=e.i(63363),r=e.i(75682),o=e.i(28317),s=e.i(96210),a=e.i(84177),i=e.i(166),n=e.i(57888),c=e.i(35668),l=e.i(97394),u=e.i(81651),h=e.i(18013),v=e.i(26873),m=e.i(76359),f=e.i(27202),d=e.i(99050),p=e.i(1656);let x={crossfade:t.f,swipe:m.f,zoom:d.f,zoomBlur:p.f,crosszoom:r.f,glitch:a.f,glitchSlide:i.f,jpegGlitch:n.f,datamosh:o.f,pixelsort:h.f,lensDistortion:c.f,slitScan:v.f,pixelScan:l.f,pixelStretch:u.f,tile:f.f,distortFade:s.f},g='"left" | "right" | "up" | "down"',b=[{name:"crossfade",note:"Plain mix. The default.",category:"page"},{name:"swipe",note:"Content moves out, the new one follows it in.",category:"page",options:[{name:"direction",type:g,default:'"left"',note:"Where the old content moves."}]},{name:"zoom",note:"Old zooms in, new grows out of the center.",category:"page",overflow:!0},{name:"crosszoom",note:"Crossfade through a zoom blur.",category:"page",overflow:!0},{name:"distortFade",note:"Noise warp while crossfading.",category:"page"},{name:"tile",note:"Tiles shrink away to show the new content.",category:"page",options:[{name:"direction",type:`"center" | ${g}`,default:'"center"',note:"Where the tiles start to shrink."},{name:"shape",type:'"hex" | "square"',default:'"hex"',note:"Tile shape."},{name:"count",type:"number",default:"12",note:"Tiles along the longer side."},{name:"shadow",type:"number (0–1)",default:"0.5",note:"Drop shadow under the shrinking tiles. 0 turns it off."}]},{name:"glitch",note:"Jittery RGB-split blocks.",category:"bold",options:[{name:"amount",type:"number",default:"1",note:"How far the blocks shift."},{name:"speed",type:"number",default:"1",note:"How fast the blocks jump."}]},{name:"glitchSlide",note:"Sliding stripes with RGB split.",category:"bold"},{name:"jpegGlitch",note:"Hard cut through a real JPEG glitch.",category:"bold",options:[{name:"iterations",type:"number",default:"4",note:"Encode and corrupt passes at the peak. More is messier."},{name:"quality",type:"number (0–1)",default:"0.1",note:"JPEG quality. Lower gives bigger blocks."}]},{name:"datamosh",note:"Hard cut that heals block by block.",category:"bold",options:[{name:"blockSize",type:"number",default:"32",note:"Block size in px. 2 or more."}]},{name:"lensDistortion",note:"Lens warp with a rainbow split.",category:"bold",options:[{name:"strength",type:"number",default:"1",note:"How hard the lens warps."},{name:"dispersion",type:"number",default:"0.6",note:"Rainbow split. 0 turns it off."},{name:"zoom",type:"number",default:"3",note:"Old content zooms in this much, new zooms back out from it. 0 turns it off."}]},{name:"pixelScan",note:"A front of glowing pixel cells.",category:"bold",options:[{name:"direction",type:'"right" | "left" | "up" | "down" | "center"',default:'"right"',note:"Where the fronts sweep. center spreads out in rings."},{name:"blackout",type:"boolean",default:"true",note:"Fill the gap between old and new with black. false leaves it transparent."}]},{name:"pixelsort",note:"Melts into sorted streaks and sorts back out.",category:"image",options:[{name:"direction",type:'"up" | "down" | "left" | "right"',default:'"up"',note:"Where the old content melts."}]},{name:"slitScan",note:"Smears into stripes and back out.",category:"image"},{name:"pixelStretch",note:"Stretches into streaks from the top.",category:"image"},{name:"zoomBlur",note:"Radial blur with RGB split.",category:"image",overflow:!0}];e.s(["I",0,b,"Y",0,x])},75682,e=>{e.i(90422);var t=e.i(28113),r=e.i(66601);class o extends t.f{name="crosszoom";overflow=!0;frag=`
+(()=>{"use strict";(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,52894,e=>{var t=e.i(16597);let o=RegExp([/(\/\/[^\n]*|<!--[\s\S]*?-->|^[ \t]*#[^\n]*)/.source,/("(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*'|`(?:[^`\\]|\\.)*`)/.source,"\\b(import|from|export|const|let|return|await|async|new|function|type|if|else|for|of|in|out|uniform|precision|void|int|bool|float|vec2|vec3|vec4|mat2|mat3|mat4|sampler2D|discard|true|false)\\b|\\b(mix|smoothstep|step|fract|clamp|texture|length|dot|sin|cos|floor|abs|min|max|pow|normalize)(?=\\s*\\()",/\b(\d+(?:\.\d+)?)\b/.source,/(<\/?[A-Za-z][\w.-]*|\/?>)/.source].join("|"),"gm"),r=["tk-c","tk-s","tk-k","tk-f","tk-n","tk-t"];e.s(["f",0,function(e){let s=[],i=0;for(let a of e.matchAll(o)){let o=a.index??0;o>i&&s.push(e.slice(i,o));let n=a.findIndex((e,t)=>t>0&&void 0!==e);s.push((0,t.createElement)("span",{key:o,className:r[n-1]},a[0])),i=o+a[0].length}return s.push(e.slice(i)),s}])},78822,e=>{e.i(52729);var t=e.i(58786),o=e.i(92408);e.s(["PageTransition",0,function({preset:e}){return(0,t.f)({transition:o.Y[e]}),null}])},92408,e=>{var t=e.i(63363),o=e.i(75682),r=e.i(28317),s=e.i(96210),i=e.i(84177),a=e.i(166),n=e.i(57888),c=e.i(35668),l=e.i(97394),u=e.i(81651),h=e.i(18013),v=e.i(26873),m=e.i(76359),f=e.i(27202),d=e.i(99050),p=e.i(1656);let x={crossfade:t.f,swipe:m.f,zoom:d.f,zoomBlur:p.f,crosszoom:o.f,glitch:i.f,glitchSlide:a.f,jpegGlitch:n.f,datamosh:r.f,pixelsort:h.f,lensDistortion:c.f,slitScan:v.f,pixelScan:l.f,pixelStretch:u.f,tile:f.f,distortFade:s.f},g='"left" | "right" | "up" | "down"',b=[{name:"crossfade",note:"Plain mix. The default.",category:"page"},{name:"swipe",note:"Content moves out, the new one follows it in.",category:"page",options:[{name:"direction",type:g,default:'"left"',note:"Where the old content moves."}]},{name:"zoom",note:"Old zooms in, new grows out of the center.",category:"page",overflow:!0},{name:"crosszoom",note:"Crossfade through a zoom blur.",category:"page",overflow:!0},{name:"distortFade",note:"Noise warp while crossfading.",category:"page"},{name:"tile",note:"Tiles shrink away to show the new content.",category:"page",options:[{name:"direction",type:`"center" | ${g}`,default:'"center"',note:"Where the tiles start to shrink."},{name:"shape",type:'"hex" | "square"',default:'"hex"',note:"Tile shape."},{name:"count",type:"number",default:"12",note:"Tiles along the longer side."},{name:"shadow",type:"number (0–1)",default:"0.5",note:"Drop shadow under the shrinking tiles. 0 turns it off."}]},{name:"glitch",note:"Jittery RGB-split blocks.",category:"bold",options:[{name:"amount",type:"number",default:"1",note:"How far the blocks shift."},{name:"speed",type:"number",default:"1",note:"How fast the blocks jump."}]},{name:"glitchSlide",note:"Sliding stripes with RGB split.",category:"bold"},{name:"jpegGlitch",note:"Hard cut through a real JPEG glitch.",category:"bold",options:[{name:"iterations",type:"number",default:"4",note:"Encode and corrupt passes at the peak. More is messier."},{name:"quality",type:"number (0–1)",default:"0.1",note:"JPEG quality. Lower gives bigger blocks."}]},{name:"datamosh",note:"Hard cut that heals block by block.",category:"bold",options:[{name:"blockSize",type:"number",default:"32",note:"Block size in px. 2 or more."}]},{name:"lensDistortion",note:"Lens warp with a rainbow split.",category:"bold",options:[{name:"strength",type:"number",default:"1",note:"How hard the lens warps."},{name:"dispersion",type:"number",default:"0.6",note:"Rainbow split. 0 turns it off."},{name:"zoom",type:"number",default:"3",note:"Old content zooms in this much, new zooms back out from it. 0 turns it off."}]},{name:"pixelScan",note:"A front of glowing pixel cells.",category:"bold",options:[{name:"direction",type:'"right" | "left" | "up" | "down" | "center"',default:'"right"',note:"Where the fronts sweep. center spreads out in rings."},{name:"blackout",type:"boolean",default:"true",note:"Fill the gap between old and new with black. false leaves it transparent."}]},{name:"pixelsort",note:"Melts into sorted streaks and sorts back out.",category:"image",options:[{name:"direction",type:'"up" | "down" | "left" | "right"',default:'"up"',note:"Where the old content melts."}]},{name:"slitScan",note:"Smears into stripes and back out.",category:"image"},{name:"pixelStretch",note:"Stretches into streaks from the top.",category:"image"},{name:"zoomBlur",note:"Radial blur with RGB split.",category:"image",overflow:!0}];e.s(["I",0,b,"Y",0,x])},75682,e=>{e.i(90422);var t=e.i(28113),o=e.i(66601);class r extends t.f{name="crosszoom";overflow=!0;frag=`
 const float STRENGTH = 0.4;
 const float TAPS = 16.0;
 
-${r.j}
+${o.j}
 // Quintic ease in/out, so the blur builds up and settles smoothly.
 float ease(float x) {
   return x < 0.5 ? 16.0 * x * x * x * x * x : 1.0 + 16.0 * pow(x - 1.0, 5.0);
@@ -26,7 +26,7 @@ vec4 transition(vec2 uv, float t) {
   }
   return c / total;
 }
-`}e.s(["f",0,o])},28317,36375,e=>{e.i(90422);var t=e.i(28113);let r=`#version 300 es
+`}e.s(["f",0,r])},28317,36375,e=>{e.i(90422);var t=e.i(28113);let o=`#version 300 es
 precision highp float;
 in vec2 uv;
 out vec4 outColor;
@@ -35,7 +35,7 @@ uniform vec4 srcRectUv;
 void main() {
     outColor = texture(src, srcRectUv.xy + uv * srcRectUv.zw);
 }
-`,o=`#version 300 es
+`,r=`#version 300 es
 precision highp float;
 in vec2 uv;
 out vec4 outColor;
@@ -43,7 +43,7 @@ uniform sampler2D src;
 void main() {
     outColor = texture(src, uv);
 }
-`;function s(e,t){e.draw({frag:r,uniforms:{src:e.src},target:t})}e.s(["N",0,s,"S",0,function(e,t,r){e.draw({frag:o,uniforms:{src:t},target:r})}],36375);let a=`#version 300 es
+`;function s(e,t){e.draw({frag:o,uniforms:{src:e.src},target:t})}e.s(["N",0,s,"S",0,function(e,t,o){e.draw({frag:r,uniforms:{src:t},target:o})}],36375);let i=`#version 300 es
 precision highp float;
 in vec2 uvContent;
 out vec4 outColor;
@@ -55,7 +55,7 @@ void main() {
     }
     outColor = texture(tex, uvContent);
 }
-`,i=`#version 300 es
+`,a=`#version 300 es
 precision highp float;
 out vec4 outMV;
 uniform sampler2D uCur, uRef;
@@ -259,11 +259,11 @@ void main() {
     );
     outColor = vec4(clamp(rgb, 0.0, 1.0), 1.0);
 }
-`,p={blockSize:16,searchRange:5,searchStep:2,useResidual:!0,dup:0,colorSpace:"ycbcr",chromaGain:1,healRate:0,healThreshold:1,view:"output"};class x{params;#e=!1;#t=!0;#r=null;#o=null;#s=null;#a=null;#i=null;#n=null;#c=null;#l=0;#u=0;#h=0;#v=0;#m=0;#f=0;#d;constructor(e={}){this.params={...p,...e},this.#d=this.params.colorSpace}setParams(e){Object.assign(this.params,e)}enable(){this.#e=!0}disable(){this.#e=!1,this.#t=!0}get enabled(){return this.#e}#p(){this.#r?.dispose(),this.#o?.dispose(),this.#s?.dispose(),this.#a?.dispose(),this.#i?.dispose(),this.#n?.dispose(),this.#c?.dispose(),this.#r=null,this.#o=null,this.#s=null,this.#a=null,this.#i=null,this.#n=null,this.#c=null}#x(e){let[t,r]=e.dims.elementPixel,o=Math.max(2,this.params.blockSize);if(this.#l===t&&this.#u===r&&this.#m===o)return;this.#p(),this.#l=t,this.#u=r,this.#h=Math.ceil(t/2),this.#v=Math.ceil(r/2),this.#m=o,this.#t=!0;let s=Math.ceil(t/o),a=Math.ceil(r/o);this.#r=e.createRenderTarget({size:[t,r]}),this.#o=e.createRenderTarget({size:[t,r],persistent:!0}),this.#a=e.createRenderTarget({size:[t,r],float:!0}),this.#i=e.createRenderTarget({size:[t,r],float:!0,persistent:!0}),this.#n=e.createRenderTarget({size:[this.#h,this.#v],float:!0,persistent:!0}),this.#c=e.createRenderTarget({size:[this.#h,this.#v],float:!0}),this.#s=e.createRenderTarget({size:[s,a],float:!0,filter:"nearest"})}render(e){this.#x(e);let t=this.#r,r=this.#o,o=this.#s,a=this.#a,l=this.#i,u=this.#n,h=this.#c;if(!t||!r||!o||!a||!l||!u||!h)return;this.params.colorSpace!==this.#d&&(this.#d=this.params.colorSpace,this.#t=!0);let d=[this.#l,this.#u];s(e,t);let p="output"!==this.params.view;if((this.#e||p)&&(e.draw({frag:i,uniforms:{uCur:t,uRef:r,uResolution:d,uBlock:this.#m,uSearch:this.params.searchRange,uStep:this.params.searchStep,uHealRate:this.params.healRate,uHealThreshold:this.params.healThreshold,uFrame:this.#f++%65536},target:o}),e.draw({frag:n,uniforms:{uCur:t,uRef:r,uMV:o,uResolution:d},target:a})),this.#e){let s=this.#t?1:1+this.params.dup,i=[this.#h,this.#v];"ycbcr"===this.params.colorSpace&&e.draw({frag:v,uniforms:{uCur:t,uRef:r,uMV:o,uChromaRes:i},target:h});for(let r=0;r<s;r++){let s=this.params.useResidual&&0===r;"ycbcr"===this.params.colorSpace?(e.draw({frag:m,uniforms:{uAccum:l,uMV:o,uVideo:t,uResidual:a,uResolution:d,uIntra:this.#t,uUseResidual:s},target:l}),e.draw({frag:f,uniforms:{uChromaAcc:u,uMV:o,uVideo:t,uResidualC:h,uChromaRes:i,uIntra:this.#t,uUseResidual:s},target:u})):e.draw({frag:c,uniforms:{uAccum:l,uMV:o,uVideo:t,uResidual:a,uResolution:d,uIntra:this.#t,uUseResidual:s},target:l})}this.#t=!1}else this.#t=!0;this.#g(e,t,r,o,a,l,u),s(e,r)}#g(e,t,r,o,s,i,n){switch(this.params.view){case"motion":e.draw({frag:l,uniforms:{uMV:o,uMvScale:this.params.searchRange*this.params.searchStep},target:e.target});return;case"residual":e.draw({frag:u,uniforms:{uResidual:s},target:e.target});return;case"current":e.draw({frag:a,uniforms:{tex:t},target:e.target});return;case"previous":e.draw({frag:a,uniforms:{tex:r},target:e.target});return;default:this.#e&&"ycbcr"===this.params.colorSpace?e.draw({frag:d,uniforms:{uLumaAcc:i,uChromaAcc:n,uChromaGain:this.params.chromaGain},target:e.target}):e.draw({frag:a,uniforms:{tex:this.#e?i:t},target:e.target})}}dispose(){this.#p(),this.#l=0,this.#u=0,this.#h=0,this.#v=0,this.#m=0,this.#t=!0}}var g=e.i(66601);class b extends t.f{name="datamosh";frag=`
+`,p={blockSize:16,searchRange:5,searchStep:2,useResidual:!0,dup:0,colorSpace:"ycbcr",chromaGain:1,healRate:0,healThreshold:1,view:"output"};class x{params;#e=!1;#t=!0;#o=null;#r=null;#s=null;#i=null;#a=null;#n=null;#c=null;#l=0;#u=0;#h=0;#v=0;#m=0;#f=0;#d;constructor(e={}){this.params={...p,...e},this.#d=this.params.colorSpace}setParams(e){Object.assign(this.params,e)}enable(){this.#e=!0}disable(){this.#e=!1,this.#t=!0}get enabled(){return this.#e}#p(){this.#o?.dispose(),this.#r?.dispose(),this.#s?.dispose(),this.#i?.dispose(),this.#a?.dispose(),this.#n?.dispose(),this.#c?.dispose(),this.#o=null,this.#r=null,this.#s=null,this.#i=null,this.#a=null,this.#n=null,this.#c=null}#x(e){let[t,o]=e.dims.elementPixel,r=Math.max(2,this.params.blockSize);if(this.#l===t&&this.#u===o&&this.#m===r)return;this.#p(),this.#l=t,this.#u=o,this.#h=Math.ceil(t/2),this.#v=Math.ceil(o/2),this.#m=r,this.#t=!0;let s=Math.ceil(t/r),i=Math.ceil(o/r);this.#o=e.createRenderTarget({size:[t,o]}),this.#r=e.createRenderTarget({size:[t,o],persistent:!0}),this.#i=e.createRenderTarget({size:[t,o],float:!0}),this.#a=e.createRenderTarget({size:[t,o],float:!0,persistent:!0}),this.#n=e.createRenderTarget({size:[this.#h,this.#v],float:!0,persistent:!0}),this.#c=e.createRenderTarget({size:[this.#h,this.#v],float:!0}),this.#s=e.createRenderTarget({size:[s,i],float:!0,filter:"nearest"})}render(e){this.#x(e);let t=this.#o,o=this.#r,r=this.#s,i=this.#i,l=this.#a,u=this.#n,h=this.#c;if(!t||!o||!r||!i||!l||!u||!h)return;this.params.colorSpace!==this.#d&&(this.#d=this.params.colorSpace,this.#t=!0);let d=[this.#l,this.#u];s(e,t);let p="output"!==this.params.view;if((this.#e||p)&&(e.draw({frag:a,uniforms:{uCur:t,uRef:o,uResolution:d,uBlock:this.#m,uSearch:this.params.searchRange,uStep:this.params.searchStep,uHealRate:this.params.healRate,uHealThreshold:this.params.healThreshold,uFrame:this.#f++%65536},target:r}),e.draw({frag:n,uniforms:{uCur:t,uRef:o,uMV:r,uResolution:d},target:i})),this.#e){let s=this.#t?1:1+this.params.dup,a=[this.#h,this.#v];"ycbcr"===this.params.colorSpace&&e.draw({frag:v,uniforms:{uCur:t,uRef:o,uMV:r,uChromaRes:a},target:h});for(let o=0;o<s;o++){let s=this.params.useResidual&&0===o;"ycbcr"===this.params.colorSpace?(e.draw({frag:m,uniforms:{uAccum:l,uMV:r,uVideo:t,uResidual:i,uResolution:d,uIntra:this.#t,uUseResidual:s},target:l}),e.draw({frag:f,uniforms:{uChromaAcc:u,uMV:r,uVideo:t,uResidualC:h,uChromaRes:a,uIntra:this.#t,uUseResidual:s},target:u})):e.draw({frag:c,uniforms:{uAccum:l,uMV:r,uVideo:t,uResidual:i,uResolution:d,uIntra:this.#t,uUseResidual:s},target:l})}this.#t=!1}else this.#t=!0;this.#g(e,t,o,r,i,l,u),s(e,o)}#g(e,t,o,r,s,a,n){switch(this.params.view){case"motion":e.draw({frag:l,uniforms:{uMV:r,uMvScale:this.params.searchRange*this.params.searchStep},target:e.target});return;case"residual":e.draw({frag:u,uniforms:{uResidual:s},target:e.target});return;case"current":e.draw({frag:i,uniforms:{tex:t},target:e.target});return;case"previous":e.draw({frag:i,uniforms:{tex:o},target:e.target});return;default:this.#e&&"ycbcr"===this.params.colorSpace?e.draw({frag:d,uniforms:{uLumaAcc:a,uChromaAcc:n,uChromaGain:this.params.chromaGain},target:e.target}):e.draw({frag:i,uniforms:{tex:this.#e?a:t},target:e.target})}}dispose(){this.#p(),this.#l=0,this.#u=0,this.#h=0,this.#v=0,this.#m=0,this.#t=!0}}var g=e.i(66601);class b extends t.f{name="datamosh";frag=`
 vec4 transition(vec2 uv, float t) {
   return reverse > 0.5 ? readFrom(uv) : readTo(uv);
 }
-`}class w extends x{#b;#w=0;#y=1;constructor(e){super({dup:0,blockSize:e()}),this.#b=e}start(e){this.params.blockSize=this.#b(),this.params.chromaGain=1.5,this.params.useResidual=!1,this.params.healRate=0,this.#w=0,this.#y=Math.max(.75*e.duration,.001),this.enable()}update(e){let{x:t}=e.progress,r=Math.min(Math.max((t-.25)/.75,0),1);this.params.useResidual=++this.#w>2,this.params.chromaGain=1.5+-.5*r,this.params.healRate=t<.25?0:1-.01**(e.deltaTime/this.#y)}end(){this.disable()}}class y extends g.A{name="datamosh";stages=[new b,new w(()=>{var e;return void 0!==(e=this.params.blockSize)&&Number.isFinite(e)&&e>=2?Math.round(e):32})]}e.s(["f",0,y],28317)},96210,84177,166,e=>{e.i(90422);var t=e.i(28113),r=e.i(66601);class o extends t.f{name="distort_fade";frag=`
+`}class w extends x{#b;#w=0;#y=1;constructor(e){super({dup:0,blockSize:e()}),this.#b=e}start(e){this.params.blockSize=this.#b(),this.params.chromaGain=1.5,this.params.useResidual=!1,this.params.healRate=0,this.#w=0,this.#y=Math.max(.75*e.duration,.001),this.enable()}update(e){let{x:t}=e.progress,o=Math.min(Math.max((t-.25)/.75,0),1);this.params.useResidual=++this.#w>2,this.params.chromaGain=1.5+-.5*o,this.params.healRate=t<.25?0:1-.01**(e.deltaTime/this.#y)}end(){this.disable()}}class y extends g.A{name="datamosh";stages=[new b,new w(()=>{var e;return void 0!==(e=this.params.blockSize)&&Number.isFinite(e)&&e>=2?Math.round(e):32})]}e.s(["f",0,y],28317)},96210,84177,166,e=>{e.i(90422);var t=e.i(28113),o=e.i(66601);class r extends t.f{name="distort_fade";frag=`
 const float STRENGTH = 0.15;
 const float SCALE = 1.0;
 
@@ -299,7 +299,7 @@ float fbm(vec2 p) {
   return snoise(p) * 0.7 + snoise(p * 2.3 + 17.0) * 0.3;
 }
 
-${r.S}
+${o.S}
 vec4 transition(vec2 uv, float t) {
   // A container overflow must not show warped content outside the element.
   if (!inRange(uv)) return vec4(0.0);
@@ -311,7 +311,7 @@ vec4 transition(vec2 uv, float t) {
   vec2 q = mirror(uv + offset);
   return mix(readFrom(q), readTo(q), smoothstep(0.3, 0.7, t));
 }
-`}e.s(["f",0,o],96210);var s=t;class a extends s.f{name="glitch";frag=`
+`}e.s(["f",0,r],96210);var s=t;class i extends s.f{name="glitch";frag=`
 uniform float amount;
 uniform float speed;
 
@@ -322,7 +322,7 @@ vec2 gnoise(vec2 uv) {
   return vec2(gnoise(uv.x), gnoise(uv.y + 100.0));
 }
 
-${r.F}
+${o.F}
 vec4 transition(vec2 uv, float t) {
   // A container overflow must not show wrapped content outside the element.
   if (!inRange(uv)) return vec4(0.0);
@@ -343,7 +343,7 @@ vec4 transition(vec2 uv, float t) {
   vec4 c2 = splitRead(uvr, uvg, uvb, true);
   return mix(c1, c2, step(0.5, t));
 }
-`;uniforms(){return{amount:this.params.amount??1,speed:this.params.speed??1}}}e.s(["f",0,a],84177);var i=t;class n extends i.f{name="glitch_slide";frag=`
+`;uniforms(){return{amount:this.params.amount??1,speed:this.params.speed??1}}}e.s(["f",0,i],84177);var a=t;class n extends a.f{name="glitch_slide";frag=`
 // The old content, then the new one to its right, as one strip.
 vec4 strip(vec2 p) {
   return p.x < 1.0 ? readFrom(p) : readTo(vec2(p.x - 1.0, p.y));
@@ -373,7 +373,7 @@ vec4 transition(vec2 uv, float t) {
   vec4 b = strip(uvb);
   return vec4(r.r, g.g, b.b, (r.a + g.a + b.a) / 3.0);
 }
-`}e.s(["f",0,n],166)},57888,97394,e=>{var t=e.i(36375);let r=`#version 300 es
+`}e.s(["f",0,n],166)},57888,97394,e=>{var t=e.i(36375);let o=`#version 300 es
 precision highp float;
 in vec2 uvSrc;
 in vec2 uvContent;
@@ -387,7 +387,7 @@ void main() {
     }
     outColor = texture(src, uvSrc);
 }
-`,o=`#version 300 es
+`,r=`#version 300 es
 precision highp float;
 in vec2 uvContent;
 out vec4 outColor;
@@ -401,7 +401,7 @@ void main() {
     vec4 c = texture(tex, uvContent);
     outColor = vec4(c.rgb * c.a, c.a);
 }
-`,s={quality:.4,seed:.25,iterations:24,resolutionScale:1,randomFlip:!0,vertical:!1,speed:0,bypass:!1};function a(e,t){if("u">typeof OffscreenCanvas)return new OffscreenCanvas(e,t);let r=document.createElement("canvas");return r.width=e,r.height=t,r}function i(e){let t=e.getContext("2d");if(!t)throw Error("[VFX-JS] JPEGGlitchEffect: 2D canvas context unavailable");return t}function n(e,t,r,o,s,a,i){switch(e.save(),e.clearRect(0,0,a,i),s){case 90:e.translate(a,0);break;case 180:e.translate(a,i);break;case 270:e.translate(0,i)}e.rotate(s*Math.PI/180),e.drawImage(t,0,0,r,o),e.restore()}class c{params;enabled=!0;#T=!1;#R=null;#S=null;#C=null;#k=null;#z=!1;#M=null;#A=null;#E=null;#P=null;#D=null;#G=null;#H=null;#U=new Uint8Array(0);#_=null;#l=0;#u=0;#F=0;#L=0;#B=!0;#O=!1;#I=-1e9;#V=0;#W=0;#j=!1;#X=0;get producedFrames(){return this.#X}constructor(e={}){this.params={...s,...e}}setParams(e){Object.assign(this.params,e),this.#B=!0}init(e){this.#T="function"==typeof createImageBitmap&&("u">typeof OffscreenCanvas||"u">typeof document),this.#T&&(this.#I=-1e9,this.#B=!0,this.#A=a(1,1),this.#E=i(this.#A),this.#P=a(1,1),this.#D=i(this.#P),this.#G=a(1,1),this.#H=i(this.#G),this.#R=e.createRenderTarget({size:[1,1]}),this.#C=e.gl,this.#N(e),this.#M=e.onContextRestored(()=>{this.#N(e),this.#z=this.#j}))}#N(e){let t=e.gl,r=t.createTexture();r&&(t.bindTexture(t.TEXTURE_2D,r),t.texParameteri(t.TEXTURE_2D,t.TEXTURE_WRAP_S,t.CLAMP_TO_EDGE),t.texParameteri(t.TEXTURE_2D,t.TEXTURE_WRAP_T,t.CLAMP_TO_EDGE),t.texParameteri(t.TEXTURE_2D,t.TEXTURE_MIN_FILTER,t.LINEAR),t.texParameteri(t.TEXTURE_2D,t.TEXTURE_MAG_FILTER,t.NEAREST),t.texImage2D(t.TEXTURE_2D,0,t.RGBA,1,1,0,t.RGBA,t.UNSIGNED_BYTE,new Uint8Array([0,0,0,0])),t.bindTexture(t.TEXTURE_2D,null),this.#k=r,this.#S=e.wrapTexture(r,{size:[this.#l||1,this.#u||1]}))}update(){!1===this.enabled&&(this.#j=!1)}render(e){if(this.params.bypass||!this.#T||!this.#R){this.#j=!1,this.#Y(e);return}let t=e.src.width,r=e.src.height;(t!==this.#F||r!==this.#L)&&(this.#F=t,this.#L=r,this.#B=!0);let[s,a]=e.dims.elementPixel,i=Math.min(1,Math.max(0,this.params.resolutionScale)),n=Math.max(1,Math.round(s*i)),c=Math.max(1,Math.round(a*i));s>=2&&a>=2&&t>0&&r>0&&((n!==this.#l||c!==this.#u)&&this.#q(e,n,c),this.#K(e)&&this.#$(e)),this.#j&&this.#S?(this.#z&&this.#J(e),e.draw({frag:o,uniforms:{tex:this.#S},target:e.target})):this.#Y(e)}#Y(e){e.draw({frag:r,uniforms:{src:e.src},target:e.target})}#K(e){if(this.#O)return!1;let t=this.params.speed;return t>0?e.time-this.#I>=1/t:this.#B}#q(e,t,r){this.#l=t,this.#u=r,this.#U=new Uint8Array(t*r*4),this.#_=new ImageData(t,r),this.#A&&(this.#A.width=t,this.#A.height=r),this.#G&&(this.#G.width=t,this.#G.height=r),this.#R?.dispose(),this.#R=e.createRenderTarget({size:[t,r]}),this.#j=!1,this.#B=!0,this.#O=!1,this.#z=!1,this.#V++}#$(e){let r,o=this.#l,s=this.#u,a=this.#A,i=this.#E,c=this.#P,l=this.#D,u=this.#_;if(!a||!i||!c||!l||!u||!this.#R)return;(0,t.N)(e,this.#R);let h=e.gl;h.readPixels(0,0,o,s,h.RGBA,h.UNSIGNED_BYTE,this.#U),h.bindFramebuffer(h.FRAMEBUFFER,null),this.#O=!0,this.#B=!1,this.#I=e.time;let v=u.data,m=4*o;for(let e=0;e<s;e++){let t=(s-1-e)*m;v.set(this.#U.subarray(t,t+m),e*m)}for(let e=3;e<v.length;e+=4)v[e]=255;let f=this.params.speed>0?this.#W:0;this.#W++;let{quality:d,seed:p,iterations:x,randomFlip:g,vertical:b}=this.params,w=(r=Math.imul(0|Math.floor(0x9e3779b1*p),0x85ebca77)+Math.imul(f+1,0xc2b2ae3d)>>>0,()=>{let e=Math.imul((r=r+0x6d2b79f5>>>0)^r>>>15,1|r);return(((e=e+Math.imul(e^e>>>7,61|e)^e)^e>>>14)>>>0)/0x100000000}),y=g&&.5>w();i.putImageData(u,0,0);let T=(180*!!y+270*!!b)%360,R=b?s:o,S=b?o:s;c.width=R,c.height=S,n(l,a,o,s,T,R,S),this.#Q(c,o,s,d,x,T,w,this.#V)}#J(e){let t=e.gl;this.#k&&this.#G&&(t.bindTexture(t.TEXTURE_2D,this.#k),t.pixelStorei(t.UNPACK_FLIP_Y_WEBGL,!0),t.pixelStorei(t.UNPACK_PREMULTIPLY_ALPHA_WEBGL,!1),t.texImage2D(t.TEXTURE_2D,0,t.RGBA,t.RGBA,t.UNSIGNED_BYTE,this.#G),t.pixelStorei(t.UNPACK_FLIP_Y_WEBGL,!1),t.bindTexture(t.TEXTURE_2D,null),this.#z=!1)}async #Q(e,t,r,o,s,a,i,c){try{let l=await ("u">typeof OffscreenCanvas&&e instanceof OffscreenCanvas?e.convertToBlob({type:"image/jpeg",quality:o}):new Promise((t,r)=>{e.toBlob(e=>e?t(e):r(Error("[VFX-JS] JPEGGlitchEffect: toBlob failed")),"image/jpeg",o)})),u=new Uint8Array(await l.arrayBuffer()),h=function(e){for(let t=2;t+3<e.length;t++)if(255===e[t]&&218===e[t+1]){let r=e[t+2]<<8|e[t+3];return Math.min(e.length,t+2+r)}return Math.min(e.length,417)}(u);!function(e,t,r,o){let s=e.length-t-4;if(s<=1)return;let a=Math.max(1,Math.floor(r));for(let r=0;r<a;r++){let i=s/a*r|0,n=Math.max(1,(s/a*(r+1)|0)-i),c=Math.min(s,i+(o()*n|0)),l=256*o()|0;e[t+c]=l}}(u,h,s,i);let v=await createImageBitmap(new Blob([u],{type:"image/jpeg"}));c===this.#V&&this.#H&&(n(this.#H,v,v.width,v.height,(360-a)%360,t,r),this.#j=!0,this.#X++,this.#z=!0),v.close()}catch{}finally{c===this.#V&&(this.#O=!1)}}dispose(){this.#M?.(),this.#M=null,this.#C&&this.#k&&this.#C.deleteTexture(this.#k),this.#k=null,this.#C=null,this.#z=!1,this.#R?.dispose(),this.#R=null,this.#S=null,this.#A=null,this.#E=null,this.#P=null,this.#D=null,this.#G=null,this.#H=null,this.#_=null,this.#U=new Uint8Array(0),this.#j=!1,this.#O=!1,this.#l=0,this.#u=0,this.#V++}}var l=e.i(66601);let u=e=>Math.min(Math.max(e.quality??.1,0),1);class h extends c{#Z;constructor(e){super({quality:u(e()),bypass:!0,resolutionScale:.25}),this.#Z=e}start(){this.params.bypass=!0,this.params.speed=30,this.params.quality=u(this.#Z())}render(e){let{x:t}=e.progress;this.params.bypass=!(t>.12&&t<.88);let r=Math.sin(Math.min(Math.max(t,0),1)*Math.PI),o=Math.max(1,Math.round(this.#Z().iterations??4));this.params.iterations=Math.max(1,Math.round(o*r)),super.render(e)}end(){this.params.bypass=!0}}class v extends l.A{name="jpeg_glitch";ease="linear";stages=[new l.s,new h(()=>this.params)]}e.s(["f",0,v],57888),e.i(90422);var m=e.i(28113);let f={right:[1,0],left:[-1,0],up:[0,1],down:[0,-1],center:[0,0]};class d extends m.f{name="pixel_scan";frag=`
+`,s={quality:.4,seed:.25,iterations:24,resolutionScale:1,randomFlip:!0,vertical:!1,speed:0,bypass:!1};function i(e,t){if("u">typeof OffscreenCanvas)return new OffscreenCanvas(e,t);let o=document.createElement("canvas");return o.width=e,o.height=t,o}function a(e){let t=e.getContext("2d");if(!t)throw Error("[VFX-JS] JPEGGlitchEffect: 2D canvas context unavailable");return t}function n(e,t,o,r,s,i,a){switch(e.save(),e.clearRect(0,0,i,a),s){case 90:e.translate(i,0);break;case 180:e.translate(i,a);break;case 270:e.translate(0,a)}e.rotate(s*Math.PI/180),e.drawImage(t,0,0,o,r),e.restore()}class c{params;enabled=!0;#T=!1;#R=null;#S=null;#C=null;#k=null;#z=!1;#M=null;#A=null;#E=null;#P=null;#D=null;#G=null;#H=null;#_=null;#l=0;#u=0;#L=0;#U=0;#F=!0;#O=!1;#B=-1e9;#I=0;#V=0;#W=!1;#j=0;get producedFrames(){return this.#j}constructor(e={}){this.params={...s,...e}}setParams(e){Object.assign(this.params,e),this.#F=!0}init(e){this.#T="function"==typeof createImageBitmap&&("u">typeof OffscreenCanvas||"u">typeof document),this.#T&&(this.#B=-1e9,this.#F=!0,this.#A=i(1,1),this.#E=a(this.#A),this.#P=i(1,1),this.#D=a(this.#P),this.#G=i(1,1),this.#H=a(this.#G),this.#R=e.createRenderTarget({size:[1,1]}),this.#C=e.gl,this.#X(e),this.#M=e.onContextRestored(()=>{this.#X(e),this.#z=this.#W}))}#X(e){let t=e.gl,o=t.createTexture();o&&(t.bindTexture(t.TEXTURE_2D,o),t.texParameteri(t.TEXTURE_2D,t.TEXTURE_WRAP_S,t.CLAMP_TO_EDGE),t.texParameteri(t.TEXTURE_2D,t.TEXTURE_WRAP_T,t.CLAMP_TO_EDGE),t.texParameteri(t.TEXTURE_2D,t.TEXTURE_MIN_FILTER,t.LINEAR),t.texParameteri(t.TEXTURE_2D,t.TEXTURE_MAG_FILTER,t.NEAREST),t.texImage2D(t.TEXTURE_2D,0,t.RGBA,1,1,0,t.RGBA,t.UNSIGNED_BYTE,new Uint8Array([0,0,0,0])),t.bindTexture(t.TEXTURE_2D,null),this.#k=o,this.#S=e.wrapTexture(o,{size:[this.#l||1,this.#u||1]}))}update(){!1===this.enabled&&(this.#W=!1)}render(e){if(this.params.bypass||!this.#T||!this.#R){this.#W=!1,this.#Y(e);return}let t=e.src.width,o=e.src.height;(t!==this.#L||o!==this.#U)&&(this.#L=t,this.#U=o,this.#F=!0);let[s,i]=e.dims.elementPixel,a=Math.min(1,Math.max(0,this.params.resolutionScale)),n=Math.max(1,Math.round(s*a)),c=Math.max(1,Math.round(i*a));s>=2&&i>=2&&t>0&&o>0&&((n!==this.#l||c!==this.#u)&&this.#q(e,n,c),this.#N(e)&&this.#K(e)),this.#W&&this.#S?(this.#z&&this.#$(e),e.draw({frag:r,uniforms:{tex:this.#S},target:e.target})):this.#Y(e)}#Y(e){e.draw({frag:o,uniforms:{src:e.src},target:e.target})}#N(e){if(this.#O)return!1;let t=this.params.speed;return t>0?e.time-this.#B>=1/t:this.#F}#q(e,t,o){this.#l=t,this.#u=o,this.#_=new ImageData(t,o),this.#A&&(this.#A.width=t,this.#A.height=o),this.#G&&(this.#G.width=t,this.#G.height=o),this.#R?.dispose(),this.#R=e.createRenderTarget({size:[t,o]}),this.#W=!1,this.#F=!0,this.#O=!1,this.#z=!1,this.#I++}#K(e){let o=this.#R;if(!o)return;(0,t.N)(e,o),this.#O=!0,this.#F=!1,this.#B=e.time;let r=this.params.speed>0?this.#V:0;this.#V++;let s=this.#I;e.readPixels(o,{flipY:!0}).then(e=>{s===this.#I&&this.#J(e,r,s)},()=>{s===this.#I&&(this.#O=!1)})}#J(e,t,o){let r,s=this.#l,i=this.#u,a=this.#A,c=this.#E,l=this.#P,u=this.#D,h=this.#_;if(!a||!c||!l||!u||!h){this.#O=!1;return}let v=h.data;v.set(e);for(let e=3;e<v.length;e+=4)v[e]=255;let{quality:m,seed:f,iterations:d,randomFlip:p,vertical:x}=this.params,g=(r=Math.imul(0|Math.floor(0x9e3779b1*f),0x85ebca77)+Math.imul(t+1,0xc2b2ae3d)>>>0,()=>{let e=Math.imul((r=r+0x6d2b79f5>>>0)^r>>>15,1|r);return(((e=e+Math.imul(e^e>>>7,61|e)^e)^e>>>14)>>>0)/0x100000000}),b=p&&.5>g();c.putImageData(h,0,0);let w=(180*!!b+270*!!x)%360,y=x?i:s,T=x?s:i;l.width=y,l.height=T,n(u,a,s,i,w,y,T),this.#Q(l,s,i,m,d,w,g,o)}#$(e){let t=e.gl;this.#k&&this.#G&&(t.bindTexture(t.TEXTURE_2D,this.#k),t.pixelStorei(t.UNPACK_FLIP_Y_WEBGL,!0),t.pixelStorei(t.UNPACK_PREMULTIPLY_ALPHA_WEBGL,!1),t.texImage2D(t.TEXTURE_2D,0,t.RGBA,t.RGBA,t.UNSIGNED_BYTE,this.#G),t.pixelStorei(t.UNPACK_FLIP_Y_WEBGL,!1),t.bindTexture(t.TEXTURE_2D,null),this.#z=!1)}async #Q(e,t,o,r,s,i,a,c){try{let l=await ("u">typeof OffscreenCanvas&&e instanceof OffscreenCanvas?e.convertToBlob({type:"image/jpeg",quality:r}):new Promise((t,o)=>{e.toBlob(e=>e?t(e):o(Error("[VFX-JS] JPEGGlitchEffect: toBlob failed")),"image/jpeg",r)})),u=new Uint8Array(await l.arrayBuffer()),h=function(e){for(let t=2;t+3<e.length;t++)if(255===e[t]&&218===e[t+1]){let o=e[t+2]<<8|e[t+3];return Math.min(e.length,t+2+o)}return Math.min(e.length,417)}(u);!function(e,t,o,r){let s=e.length-t-4;if(s<=1)return;let i=Math.max(1,Math.floor(o));for(let o=0;o<i;o++){let a=s/i*o|0,n=Math.max(1,(s/i*(o+1)|0)-a),c=Math.min(s,a+(r()*n|0)),l=256*r()|0;e[t+c]=l}}(u,h,s,a);let v=await createImageBitmap(new Blob([u],{type:"image/jpeg"}));c===this.#I&&this.#H&&(n(this.#H,v,v.width,v.height,(360-i)%360,t,o),this.#W=!0,this.#j++,this.#z=!0),v.close()}catch{}finally{c===this.#I&&(this.#O=!1)}}dispose(){this.#M?.(),this.#M=null,this.#C&&this.#k&&this.#C.deleteTexture(this.#k),this.#k=null,this.#C=null,this.#z=!1,this.#R?.dispose(),this.#R=null,this.#S=null,this.#A=null,this.#E=null,this.#P=null,this.#D=null,this.#G=null,this.#H=null,this.#_=null,this.#W=!1,this.#O=!1,this.#l=0,this.#u=0,this.#I++}}var l=e.i(66601);let u=e=>Math.min(Math.max(e.quality??.1,0),1);class h extends c{#Z;constructor(e){super({quality:u(e()),bypass:!0,resolutionScale:.25}),this.#Z=e}start(){this.params.bypass=!0,this.params.speed=30,this.params.quality=u(this.#Z())}render(e){let{x:t}=e.progress;this.params.bypass=!(t>.12&&t<.88);let o=Math.sin(Math.min(Math.max(t,0),1)*Math.PI),r=Math.max(1,Math.round(this.#Z().iterations??4));this.params.iterations=Math.max(1,Math.round(r*o)),super.render(e)}end(){this.params.bypass=!0}}class v extends l.A{name="jpeg_glitch";ease="linear";stages=[new l.s,new h(()=>this.params)]}e.s(["f",0,v],57888),e.i(90422);var m=e.i(28113);let f={right:[1,0],left:[-1,0],up:[0,1],down:[0,-1],center:[0,0]};class d extends m.f{name="pixel_scan";frag=`
 uniform float blackout;
 // Zero spreads out in rings; otherwise the side the fronts sweep toward.
 uniform vec2 sweep;
@@ -497,7 +497,7 @@ vec4 transition(vec2 uv, float t) {
   c /= LAYERS;
   return vec4(c.rgb, min(c.a, 1.0));
 }
-`;uniforms(){return{blackout:this.params.blackout??!0?1:0,sweep:f[this.params.direction??"right"]}}}e.s(["f",0,d],97394)},81651,e=>{e.i(90422);var t=e.i(28113);class r extends t.f{name="pixel_stretch";frag=`
+`;uniforms(){return{blackout:this.params.blackout??!0?1:0,sweep:f[this.params.direction??"right"]}}}e.s(["f",0,d],97394)},81651,e=>{e.i(90422);var t=e.i(28113);class o extends t.f{name="pixel_stretch";frag=`
 const float SMOOTH = 0.05;
 
 // Quadratic smooth min (Inigo Quilez) to round the corner where the streaks start.
@@ -528,7 +528,7 @@ vec4 transition(vec2 uv, float t) {
   }
   return c;
 }
-`}e.s(["f",0,r])},18013,e=>{var t=e.i(36375);let r=`
+`}e.s(["f",0,o])},18013,e=>{var t=e.i(36375);let o=`
 float key(vec3 c, int mode) {
     if (mode == 0) return dot(c, vec3(0.299, 0.587, 0.114));
     if (mode == 1) return c.r;
@@ -545,7 +545,7 @@ float key(vec3 c, int mode) {
     else                h = (c.r - c.g) / d + 4.0;
     return h / 6.0;
 }
-`,o=`
+`,r=`
 ivec2 toXY(int a, int b, int axis) { return axis == 0 ? ivec2(a, b) : ivec2(b, a); }
 
 // Map a box point (centred coords) back into source pixel space — the same
@@ -611,8 +611,8 @@ uniform int masked;
 uniform vec2 boxSize;
 uniform vec2 imgSize;
 uniform vec2 rot;
-${r}
 ${o}
+${r}
 void main() {
     ivec2 p = ivec2(gl_FragCoord.xy);
     int a = axis == 0 ? p.x : p.y;
@@ -637,7 +637,7 @@ void main() {
     }
     outColor = vec4(float(rank), float(segEnd - segStart), 0.0, 1.0);
 }
-`,a=`#version 300 es
+`,i=`#version 300 es
 precision highp float;
 in vec2 uv;
 in vec2 uvContent;
@@ -655,8 +655,8 @@ uniform int masked;
 uniform vec2 boxSize;
 uniform vec2 imgSize;
 uniform vec2 rot;
-${r}
 ${o}
+${r}
 void main() {
     vec2 p = masked == 1 ? uv : uvContent;
     vec2 hiUv = masked == 1 ? uv : uvSrc;
@@ -702,7 +702,7 @@ void main() {
     }
     outColor = texture(srcHi, hiUv);
 }
-`,i=`#version 300 es
+`,a=`#version 300 es
 precision highp float;
 in vec2 uvSrc;
 out vec4 outColor;
@@ -749,7 +749,7 @@ void main() {
     vec2 uvB = (dBox + boxSize * 0.5) / boxSize;
     outColor = texture(src, uvB);
 }
-`,l={right:{axis:0,direction:0},left:{axis:0,direction:1},down:{axis:1,direction:1},up:{axis:1,direction:0}},u={luminance:0,r:1,g:2,b:3,hue:4,saturation:5},h={range:[0,1],sortRes:128,key:"luminance",direction:"up",angle:0,bypass:!1};class v{params;#ee=null;#et=null;#er=null;#eo=null;#l=0;#u=0;#es=0;#ea=0;#ei=0;#en=0;#ec=0;constructor(e={}){this.params={...h,...e},this.params.range=[...this.params.range]}setParams(e){Object.assign(this.params,e),e.range&&(this.params.range=[...e.range])}#p(){this.#ee?.dispose(),this.#et?.dispose(),this.#er?.dispose(),this.#eo?.dispose(),this.#ee=null,this.#et=null,this.#er=null,this.#eo=null}#x(e){let[t,r]=e.dims.elementPixel,{axis:o}=l[this.params.direction],{angle:s}=this.params,a=this.params.sortRes,i=t,n=r;if(0!==s){let e=s*Math.PI/180,o=Math.abs(Math.cos(e)),a=Math.abs(Math.sin(e));i=Math.ceil(t*o+r*a),n=Math.ceil(t*a+r*o)}let c=0===o?Math.max(1,Math.round(a*i/t)):Math.max(1,Math.round(a*n/r)),u=0===o?c:i,h=0===o?n:c;(this.#l!==t||this.#u!==r||this.#es!==s||this.#en!==u||this.#ec!==h)&&(this.#p(),this.#l=t,this.#u=r,this.#es=s,this.#ea=i,this.#ei=n,this.#en=u,this.#ec=h,this.#ee=e.createRenderTarget({size:[u,h],filter:"nearest"}),this.#et=e.createRenderTarget({size:[u,h],filter:"nearest",float:!0}),0!==s&&(this.#er=e.createRenderTarget({size:[i,n]}),this.#eo=e.createRenderTarget({size:[i,n]})))}render(e){if(this.#x(e),this.params.bypass||!this.#ee||!this.#et)return void e.draw({frag:i,uniforms:{src:e.src},target:e.target});let{axis:r,direction:o}=l[this.params.direction],h=[this.#en,this.#ec],[v,m]=this.params.range,f=u[this.params.key],[d,p]=e.dims.elementPixel,x=this.#er,g=this.#eo,b=0!==this.params.angle&&null!==x&&null!==g,w=e.src,y=e.target,T=[1,0],R=[d,p];if(b){let t=-this.params.angle*Math.PI/180;T=[Math.cos(t),Math.sin(t)],R=[this.#ea,this.#ei],e.draw({frag:n,uniforms:{src:e.src,srcSize:[d,p],boxSize:R,rot:T},target:x}),w=x,y=g}b&&null!==x?(0,t.S)(e,x,this.#ee):(0,t.N)(e,this.#ee);let S=+!!b,C=[d,p];e.draw({frag:s,uniforms:{src:this.#ee,srcSize:h,threshold:v,thresholdHigh:m,keyMode:f,direction:o,axis:r,masked:S,boxSize:R,imgSize:C,rot:T},target:this.#et}),e.draw({frag:a,uniforms:{src:this.#ee,srcHi:w,rankTex:this.#et,lowSize:h,threshold:v,thresholdHigh:m,keyMode:f,axis:r,masked:S,boxSize:R,imgSize:C,rot:T},target:y}),b&&e.draw({frag:c,uniforms:{src:g,srcSize:[d,p],boxSize:R,rot:T},target:e.target})}dispose(){this.#p(),this.#l=0,this.#u=0,this.#es=0,this.#ea=0,this.#ei=0,this.#en=0,this.#ec=0}}var m=e.i(66601);let f={up:"down",down:"up",left:"right",right:"left"};class d extends v{#el;#eu=!1;constructor(e){super({range:[1,1]}),this.#el=e}start(e){let t=this.#el();this.#eu=e.reverse,this.params.direction=e.reverse?f[t]:t,this.params.range[0]=1}update(e){let{t}=e.progress,r=this.#el(),o=this.#eu?1-t:t;this.params.direction=o<.5?r:f[r],this.params.range[0]=Math.abs(1-2*t)}end(){this.params.range[0]=1}}class p extends m.A{name="pixelsort";stages=[new m.s,new d(()=>this.params.direction??"up")]}e.s(["f",0,p],18013)},26873,e=>{e.i(90422);var t=e.i(28113);class r extends t.f{name="slit_scan";frag=`
+`,l={right:{axis:0,direction:0},left:{axis:0,direction:1},down:{axis:1,direction:1},up:{axis:1,direction:0}},u={luminance:0,r:1,g:2,b:3,hue:4,saturation:5},h={range:[0,1],sortRes:128,key:"luminance",direction:"up",angle:0,bypass:!1};class v{params;#ee=null;#et=null;#eo=null;#er=null;#l=0;#u=0;#es=0;#ei=0;#ea=0;#en=0;#ec=0;constructor(e={}){this.params={...h,...e},this.params.range=[...this.params.range]}setParams(e){Object.assign(this.params,e),e.range&&(this.params.range=[...e.range])}#p(){this.#ee?.dispose(),this.#et?.dispose(),this.#eo?.dispose(),this.#er?.dispose(),this.#ee=null,this.#et=null,this.#eo=null,this.#er=null}#x(e){let[t,o]=e.dims.elementPixel,{axis:r}=l[this.params.direction],{angle:s}=this.params,i=this.params.sortRes,a=t,n=o;if(0!==s){let e=s*Math.PI/180,r=Math.abs(Math.cos(e)),i=Math.abs(Math.sin(e));a=Math.ceil(t*r+o*i),n=Math.ceil(t*i+o*r)}let c=0===r?Math.max(1,Math.round(i*a/t)):Math.max(1,Math.round(i*n/o)),u=0===r?c:a,h=0===r?n:c;(this.#l!==t||this.#u!==o||this.#es!==s||this.#en!==u||this.#ec!==h)&&(this.#p(),this.#l=t,this.#u=o,this.#es=s,this.#ei=a,this.#ea=n,this.#en=u,this.#ec=h,this.#ee=e.createRenderTarget({size:[u,h],filter:"nearest"}),this.#et=e.createRenderTarget({size:[u,h],filter:"nearest",float:!0}),0!==s&&(this.#eo=e.createRenderTarget({size:[a,n]}),this.#er=e.createRenderTarget({size:[a,n]})))}render(e){if(this.#x(e),this.params.bypass||!this.#ee||!this.#et)return void e.draw({frag:a,uniforms:{src:e.src},target:e.target});let{axis:o,direction:r}=l[this.params.direction],h=[this.#en,this.#ec],[v,m]=this.params.range,f=u[this.params.key],[d,p]=e.dims.elementPixel,x=this.#eo,g=this.#er,b=0!==this.params.angle&&null!==x&&null!==g,w=e.src,y=e.target,T=[1,0],R=[d,p];if(b){let t=-this.params.angle*Math.PI/180;T=[Math.cos(t),Math.sin(t)],R=[this.#ei,this.#ea],e.draw({frag:n,uniforms:{src:e.src,srcSize:[d,p],boxSize:R,rot:T},target:x}),w=x,y=g}b&&null!==x?(0,t.S)(e,x,this.#ee):(0,t.N)(e,this.#ee);let S=+!!b,C=[d,p];e.draw({frag:s,uniforms:{src:this.#ee,srcSize:h,threshold:v,thresholdHigh:m,keyMode:f,direction:r,axis:o,masked:S,boxSize:R,imgSize:C,rot:T},target:this.#et}),e.draw({frag:i,uniforms:{src:this.#ee,srcHi:w,rankTex:this.#et,lowSize:h,threshold:v,thresholdHigh:m,keyMode:f,axis:o,masked:S,boxSize:R,imgSize:C,rot:T},target:y}),b&&e.draw({frag:c,uniforms:{src:g,srcSize:[d,p],boxSize:R,rot:T},target:e.target})}dispose(){this.#p(),this.#l=0,this.#u=0,this.#es=0,this.#ei=0,this.#ea=0,this.#en=0,this.#ec=0}}var m=e.i(66601);let f={up:"down",down:"up",left:"right",right:"left"};class d extends v{#el;#eu=!1;constructor(e){super({range:[1,1]}),this.#el=e}start(e){let t=this.#el();this.#eu=e.reverse,this.params.direction=e.reverse?f[t]:t,this.params.range[0]=1}update(e){let{t}=e.progress,o=this.#el(),r=this.#eu?1-t:t;this.params.direction=r<.5?o:f[o],this.params.range[0]=Math.abs(1-2*t)}end(){this.params.range[0]=1}}class p extends m.A{name="pixelsort";stages=[new m.s,new d(()=>this.params.direction??"up")]}e.s(["f",0,p],18013)},26873,e=>{e.i(90422);var t=e.i(28113);class o extends t.f{name="slit_scan";frag=`
 const vec3 LAG = vec3(0.0, 0.2, 0.4);
 
 vec4 splitRead(float xr, float xg, float xb, float y, bool to) {
@@ -780,13 +780,13 @@ vec4 transition(vec2 uv, float t) {
   }
   return c;
 }
-`}e.s(["f",0,r])},76359,27202,e=>{e.i(90422);var t=e.i(28113),r=e.i(66601);let o={left:[-1,0],right:[1,0],up:[0,1],down:[0,-1]};class s extends t.f{name="swipe";frag=`
+`}e.s(["f",0,o])},76359,27202,e=>{e.i(90422);var t=e.i(28113),o=e.i(66601);let r={left:[-1,0],right:[1,0],up:[0,1],down:[0,-1]};class s extends t.f{name="swipe";frag=`
 uniform vec2 move;
 const float STRETCH = 0.6;
 const float BLUR = 0.2;
 const float TAPS = 16.0;
 
-${r.j}
+${o.j}
 // The old and new content as one strip along the move.
 vec4 strip(vec2 p) {
   return inRange(p) ? readFrom(p) : readTo(p + move);
@@ -807,7 +807,7 @@ vec4 transition(vec2 uv, float t) {
   }
   return c / TAPS;
 }
-`;uniforms(){return{move:o[this.params.direction??"left"]}}}e.s(["f",0,s],76359);var a=t;let i={center:[0,0],left:[-1,0],right:[1,0],up:[0,1],down:[0,-1]},n={hex:`
+`;uniforms(){return{move:r[this.params.direction??"left"]}}}e.s(["f",0,s],76359);var i=t;let a={center:[0,0],left:[-1,0],right:[1,0],up:[0,1],down:[0,-1]},n={hex:`
 const vec2 HEX = vec2(1.0, 1.7320508);
 vec4 cellOf(vec2 g) {
   vec4 ids = floor(vec4(g, g - vec2(0.5, 1.0)) / HEX.xyxy) + 0.5;
@@ -873,7 +873,7 @@ vec4 transition(vec2 uv, float t) {
   from *= inside;
   return from + to * (1.0 - from.a);
 }
-`,l={hex:c("hex"),square:c("square")};class u extends a.f{name="tile";get frag(){return l[this.params.shape??"hex"]}uniforms(){return{count:Math.max(1,Math.round(this.params.count??12)),shadow:Math.min(Math.max(this.params.shadow??.5,0),1),sweep:i[this.params.direction??"center"]}}}e.s(["f",0,u],27202)},99050,1656,e=>{e.i(90422);var t=e.i(28113);class r extends t.f{name="zoom";overflow=!0;frag=`
+`,l={hex:c("hex"),square:c("square")};class u extends i.f{name="tile";get frag(){return l[this.params.shape??"hex"]}uniforms(){return{count:Math.max(1,Math.round(this.params.count??12)),shadow:Math.min(Math.max(this.params.shadow??.5,0),1),sweep:a[this.params.direction??"center"]}}}e.s(["f",0,u],27202)},99050,1656,e=>{e.i(90422);var t=e.i(28113);class o extends t.f{name="zoom";overflow=!0;frag=`
 vec4 transition(vec2 uv, float t) {
   vec2 uv1 = (uv - 0.5) * (1.0 - t) + 0.5;
   vec2 uv2 = (uv - 0.5) / (t * 0.999 + 0.001) + 0.5;
@@ -881,7 +881,7 @@ vec4 transition(vec2 uv, float t) {
   vec4 to = inRange(uv) ? readTo(fract(uv2)) : vec4(0.0);
   return mix(readFrom(uv1), to, t);
 }
-`}e.s(["f",0,r],99050);var o=t,s=e.i(66601);class a extends o.f{name="zoom_blur";overflow=!0;frag=`
+`}e.s(["f",0,o],99050);var r=t,s=e.i(66601);class i extends r.f{name="zoom_blur";overflow=!0;frag=`
 ${s.F}
 ${s.j}
 vec4 transition(vec2 uv, float t) {
@@ -901,4 +901,4 @@ vec4 transition(vec2 uv, float t) {
   }
   return mix(c1 / 16.0, c2 / 16.0, t);
 }
-`}e.s(["f",0,a],1656)}])})();
+`}e.s(["f",0,i],1656)}])})();
